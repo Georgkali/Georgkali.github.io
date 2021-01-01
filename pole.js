@@ -63,7 +63,11 @@ function initMap() {
   let map;
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 56.993657, lng: 24.187987 },
-    zoom: 8,
+    zoom: 16,
+  });
+  const marker = new google.maps.Marker({
+    position: { lat: 56.993657, lng: 24.187987 },
+    map: map,
   });
 }
 
