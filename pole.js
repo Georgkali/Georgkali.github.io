@@ -59,16 +59,66 @@ contacts.addEventListener('click', showContacts);
 
 
 
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let points = document.getElementsByClassName("point");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < points.length; i++) {
+      points[i].className = points[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  points[slideIndex-1].className += " active";
+}
+
+
+// Initialize and add the map
 function initMap() {
-  let map;
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 56.993657, lng: 24.187987 },
-    zoom: 16,
+  // The location of Uluru
+  const uluru = { lat: 56.993766, lng: 24.187939 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: uluru,
   });
+  // The marker, positioned at Uluru
   const marker = new google.maps.Marker({
-    position: { lat: 56.993657, lng: 24.187987 },
+    position: uluru,
     map: map,
   });
 }
 
 
+
+
+function showCoachText(n) {
+  let coachTxt = document.getElementsByClassName("coach_txt");
+  let coachImg = document.getElementsByClassName("coach_img")
+  coachTxt[n].style.display = "block";
+  coachImg[n].style.opacity = "1";
+  if(n === 0) {
+    coachTxt[1].style.display = "none";
+    coachImg[1].style.opacity = "0.5";
+  } else if (n === 1) {
+    coachTxt[0].style.display = "none"; 
+    coachImg[0].style.opacity = "0.5";
+  }
+}
+  

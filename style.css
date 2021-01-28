@@ -1,5 +1,6 @@
 body {
-    background-image: url(shutterstock_263501771.jpg);
+    
+    background-color: white;
     background-size: auto;
     display: flex;
     flex-direction: column;
@@ -8,11 +9,11 @@ body {
     padding: 0;
 
 }
- a {
+ .navigation a {
      text-decoration: none;
      color: white;
  }
-a:hover {
+.navigation a:hover {
     color: yellow;
 }
 .navigation {
@@ -37,9 +38,9 @@ ul {
     
 }
 
-#about_section {
+#title_section {
     font-family: "Fugaz One";
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 85%);
+    
     background-image: url(shutterstock_1788815231.jpg);
     background-size: cover;
     min-height: 800px;
@@ -57,6 +58,7 @@ ul {
 
    
 
+
 #logo_image {
     display: inline-block;
     width: 400px;
@@ -71,12 +73,27 @@ ul {
 }
 
 #coaches_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
+.coaches {
+    width: 100%;
     min-height: 500px;
     align-items: center;
     display: flex;
-    
-}
+    justify-content: space-around;
+    flex-direction: row;
+    }
+.coach_txt  {
+    display: none;
+    background-color: rosybrown;
+    font-size: x-large;
+    line-height: initial;
+    padding: 50px;
+}  
+
 
 #classes_section {
     font-family: "Fugaz One";
@@ -106,20 +123,21 @@ ul {
     justify-content: center;
     align-items: center;
 }
-.content_block {
-    background-color: rgba(124, 123, 123, 0.5);
-    padding: 50px;
-    border-radius: 15px;
-    border-style: double;
-    border-width: 10px;
-    border-color: hsla(229, 15%, 59%, 0.384);
-    
+
+
+.coach_img {
+    opacity: 0.5;
 }
 #coach_photo img {
     border-radius: 50%;
     border-style: double;
     border-color: rosybrown;
     display: inline-block;
+    
+    
+}
+#coach_photo img:hover {
+    opacity: 1;
 }
 #coach_info ul {
     display: inline-block;
@@ -167,4 +185,78 @@ iframe {
     height: 400px;
     width: 400px;
   }
+  #contacts_list {
+      flex-direction: column;
+  }
+  .about_section_container {
+    margin-top: 100px;  
+    font-size: x-large;
+    text-align: center;
+    background-color: rosybrown;
+    width: 100%;
+    line-height: 20px;
+    line-height: initial;
+  }
+  #slide_container {
+    
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      height: 300px;
+  }
+ 
+  .slide {
+      display: none;
+      text-align: center;
+      padding: 80px;  
+  }
   
+  .point_container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    flex-direction: row;
+    
+  }
+  .point {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-bottom: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+  }
+
+  .active, .point:hover {
+    background-color: #717171;
+  }
+  .prev, .next {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+ li {
+   list-style-type: none;
+}

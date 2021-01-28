@@ -7,12 +7,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Monoton&display=swap" rel="stylesheet">
     <title>Pole Ver.2</title>
-    
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD799uZafVwxUn6GH_17UkCv5JfadBG9mY&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-    <script type="text/javascript" src="./pole.js"></script>
+    <script type="text/javascript" src="./pole.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD799uZafVwxUn6GH_17UkCv5JfadBG9mY&callback=initMap">
+    </script>
 </head>
 
 <body>
@@ -27,9 +26,9 @@
     </div>
     
 
-    <!-- about section -->
+    <!-- title section -->
      
-    <div class="about" id="about_section">
+    <div class="title" id="title_section">
         
         <div id="logo_image">
         <img src="124838955_217213673080177_1622517917604221029_o-removebg-preview.png" alt="logo" />
@@ -41,20 +40,109 @@
         </div>
 
     </div>
+    <!-- about section -->
+    <div class="about" id="about_section">
+       <div class="about_section_container">
+       <div id="slide_container">
+           <div class="slide">
+            <p>Pommade Pole dance studio piedāvā jums lielisku un optimālu risinājumu, 
+                kā var patiešām mīlēt sporta nodarbības — baudot procesu un priecājoties no sasniegtajiem rezultātiem! 
+                Pavisam drīz jūs sapratīsiet, ka sporta nodarbības ne tikai padara jūs spēcīgākus un veselīgākus,
+                 bet arī patiešām spēj pacelt garastāvokli un uzlabot domāšanas procesu!</p>
+           </div>
+           <div class="slide">
+            <p>Deju nodarbībās tiek uzlabota jūsu plastika, kas arī palīdz labāk sajust savu ķermeni. 
+                Deja ir grācija, unikālā ķermeņa valoda un meditācija, kas spēj izteikt jūsu individualitāti, 
+                radot skaistumu kustībās. Plastika ir ne tikai tas, kā jūs dejojat, bet arī kā jūs kustaties katru dienu, kā pasniedzat sevi ikdienas dzīvē. 
+                Ķermeņa plastika ir jūsu psiholoģiskās elastības atspoguļojums, 
+                tāpēc būt plastiskam nozīmē būt arī pievilcīgam un veiksmīgam!</p> 
+           </div>
+           <div class="slide">
+            <p>Elastības un lokanības attīstība ir noderīga jebkurā vecumā un jebkurā izpausmē. 
+                To jums palīdzēs attīstīt Pommade stiepšanas nodarbības (strečings). 
+                Plastika savienojumā ar lokanību var radīt patiešām brīnumainu estētiku un baudu! 
+                Būt lokanam nozīmē spēt salocīties tā, 
+                lai vienmēr varat atrast izeju no jebkuras situācijas! </p>
+           </div>
+           <div class="slide">
+            <p>Pommade studijas komanda pieejamajās sporta nodarbībās dalīsies ar savu mīlestību uz attīstību, 
+                jaunām zināšanām un jaunradi. 
+                Esiet plastiski, disciplinēti un lokani, sportojot kopā ar mums!</p>
+           </div>
+       
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+       <div class="points_container">
+           <span class="point" onclick="currentSlide(1)"></span>
+           <span class="point" onclick="currentSlide(2)"></span>
+           <span class="point" onclick="currentSlide(3)"></span>
+           <span class="point" onclick="currentSlide(4)"></span>
+       </div>
+    </div>
+    </div>
+
     <!-- coaches section -->
-    <div class="coaches" id="coaches_section">
-        
+    <div id="coaches_section">
+    <div class="coaches">
+        <div class="coach">
             <div id="coach_photo">
-                <img src="23305470.jpg" alt="cartoon_face" />
+               <a onclick="showCoachText(0)"> <img class="coach_img" src="23305470.jpg" alt="cartoon_face" /></a>
             </div>
         <div id="coach_info">
         <ul>
-            <li>Name</li>
-            <li>Surname</li>
-            <li>Age</li>
+            <li>Alexandra</li>
+            
         </ul>
+        </div>
     </div>
 
+    <div class="coach">
+        <div id="coach_photo">
+            <a onclick="showCoachText(1)"><img class="coach_img" src="23305470.jpg" alt="cartoon_face" /></a>
+        </div>
+    <div id="coach_info">
+    <ul>
+        <li>Inna</li>
+        
+    </ul>
+    </div>
+</div>
+    </div>
+<!-- coach info section-->
+    <div id="coach_texts">
+        <div  class="coach_txt">
+        <p>Alexandra uzsāka savu sporta ceļu jau agrā bērnībā. 
+            Viņa apguva un nodarbojās ar tekvondo cīņas mākslu. 
+            Ilgi un mērķtiecīgi trenējoties, viņa sacensībās spēja iegūt daudz uzvaras, kā arī iegūt melno jostu. 
+            Deviņus gadus Aleksandra strādāja par tekvondo pasniedzēju, pa to laiku pabeidzot studijas universitātē un apgūstot treneru kursus. 
+            Ar Pole dance Alexandra sāka nodarboties 25 gadu vecumā. 
+            Līdz tam viņa jau bija mēģinājusi dažādus deju stilus — Dance of Street deju studijā tīņu gados un Tribal fusion dance jau vēlāk. 
+            Tomēr tieši dejās ar pilonu Alexandra iemīlējusies no pirmās nodarbības. 
+            Jau pirmajā gadā viņa sāka uzstāties uz skatuves un piedalīties Pole dance sacensībās. 
+            Alexandra joprojām regulāri piedalās gan sacensībās, gan pasākumos un koncertos, mēģinot vienādi attīstīties gan Exotic Pole Dance, gan Pole Dance Art stilos. 
+            2018. gadā “Pole Performance” sacensībās, kuras tika organizētas Skotijā, Alexandra ieguva pirmo vietu.
+        </p>
+    </div>
+    <div  class="coach_txt">
+        <p>Ar Pole dance sāka nodarboties kopš 2016.gada vasaras. 
+            To, ka šis sporta veids ir tas, ar ko grib sevi pilnveidot, saprata jau pēc pirmās nodarbības. 
+            No sākuma apmeklēja triku nodarbības, ar Pole dance exotic sāka nodarboties vēlāk. 
+            Pirms tam vidusskolā nodarbojās ar vēderdējām. Pēc skolas absolvēšanas ar dejām bija jāiepauzē studiju dēļ. 
+            2012. gadā absolvēja RSU rehabilitācijas fakultāti. 
+            Inna ir sertificēta fizioterapeite un labi zina, kā pareizi uztrenēt cilvēkus ar dažādu fizisko sagatavotību. 
+            Paralēli darbam ar pacientiem un sportu, Inna ir uguns un gaismas šova grupas „Studio Fotia” dalībniece kopš 2016. gada un regulāri uzstājas dažādos pasākumos. 
+            Ar skatuvi pazīstama jau sen, skolas laikā apmeklēja teatrālo pulciņu un uzstājās dažādos uzvedumos, arī tagad turpina apmeklēt Ivara Brakovska aktiermeistarības klases. 
+            Regulāri apmeklē dažādas deju nodarbības, mēģinot sevi tādos deju stilos, kā laikmetīgā deja, tverks un lady style.</p>
+            <p>2018. gada finaliste „Pole Emotions” art amateur nominācija, Latvijā</p>
+            <p>2019. gada finaliste „Zodiac”exotic pole dance beginners category, Maskavā</p>
+            <p>2019. gada finaliste „Pole angels” exotic pole dance amateur category, Minskā</p>
+            <p>2019.gada 2. vietas ieguvēja „Pole Emotions” exotic pole dance amateur category, Latvijā</p>
+        </div>
+    </div>
+    <!--coach info section end-->
+    </div>
     </div>
     <!-- classes section -->    
     <div id="classes_section">
@@ -89,12 +177,23 @@
         </tbody>
 
 
-    </table>    
+    </table>  
+    
     </div>
        
     <!-- contacts section -->
     <div class="contacts" id="contacts_section">
         <div id="map"></div>
+        <div>
+<ul id="contacts_list">
+    <li><i class="fa fa-map-o" style="font-size:24px"></i> Latvia, Riga, Ezermalas street 25</li>
+    <br>
+    <li><i class="fa fa-mobile-phone" style="font-size:24px"></i> +371 2345678</li>
+    <br>
+    <li><i class="fa fa-envelope-o" style="font-size:24px"></i> pole@pole.com</li>
+
+</ul>
+    </div>
     </div>
     
 
