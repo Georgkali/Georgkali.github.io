@@ -122,3 +122,19 @@ function showCoachText(n) {
   }
 }
   
+function showClassesText(n) {
+  let txt = document.getElementsByClassName("classes_txt");
+  
+  txt[n].style.display = "block";
+  if (n === 0) {
+    txt[1].style.display = "none"; 
+    txt[2].style.display = "none"; 
+  } else if (n === 1) {
+    txt[0].style.display = "none";
+    txt[2].style.display = "none"; 
+  } else if (n === 2) {
+    txt[0].style.display = "none";
+    txt[1].style.display = "none"; 
+  }
+  
+  }

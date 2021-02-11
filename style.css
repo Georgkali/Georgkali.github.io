@@ -27,7 +27,7 @@ body {
     z-index: 9999;
     
 }
-ul {
+.navigation ul {
     display: flex;
     justify-content: space-around;
 }
@@ -87,7 +87,7 @@ ul {
     }
 .coach_txt  {
     display: none;
-    background-color: rosybrown;
+    background-color: #c7acc4;
     font-size: x-large;
     line-height: initial;
     padding: 50px;
@@ -98,7 +98,7 @@ ul {
     font-family: "Fugaz One";
     background-image: url(shutterstock_527873368.jpg);
     background-size: cover;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    /*clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);*/
     width: 100%;
     min-height: 800px;
     height: auto;
@@ -108,6 +108,38 @@ ul {
     align-items: center;
     display: flex;
     
+}
+.classes_description {
+    margin-top: 150px;
+    
+    display: flex;
+    /*background-color: #c7acc4;*/
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.classes_description div {
+    border-radius: 50%;
+    border-style: solid;
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #c7acc4;
+}
+.classes_texts {
+    margin-top: 100px;  
+    font-size: x-large;
+    text-align: center;
+    background-color: #c7acc4;
+    width: 100%;
+    line-height: 20px;
+    line-height: initial;
+    
+}
+.classes_txt {
+    display: none;
+    padding: 80px;
 }
 #contacts_section {
     background-image: url(shutterstock_433736437.jpg);
@@ -117,13 +149,15 @@ ul {
     min-height: 800px;
     height: auto;
     margin: 20px;
-      
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    /*clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);*/
     justify-content: center;
     align-items: center;
 }
 
-
+.coach {
+    text-align: center;
+    font-size: xx-large;
+}
 .coach_img {
     opacity: 0.5;
 }
@@ -191,7 +225,7 @@ iframe {
     margin-top: 100px;  
     font-size: x-large;
     text-align: center;
-    background-color: rosybrown;
+    background-color: #c7acc4;
     width: 100%;
     line-height: 20px;
     line-height: initial;
@@ -208,6 +242,7 @@ iframe {
       display: none;
       text-align: center;
       padding: 80px;  
+      /*color: white;*/
   }
   
   .point_container {
@@ -256,6 +291,6 @@ iframe {
     background-color: rgba(0,0,0,0.8);
     color: white;
 }
- li {
+#contacts_list li {
    list-style-type: none;
 }
