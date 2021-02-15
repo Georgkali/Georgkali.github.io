@@ -92,13 +92,19 @@ h1 {
     line-height: initial;
     padding: 50px;
 }  
+#schedule {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
-#classes_section {
+#schedule_section {
+    margin-top: 120px;
+    margin-bottom: 120px;
     font-family: "Fugaz One";
     width: 90%;
     height: auto;
-    margin: 20px;
     display: flex;
     border-radius: 20px;
 }
@@ -159,18 +165,36 @@ h1 {
     padding: 80px;
 }
 #contacts_section {
+    /*background-image: url(shutterstock_433736437.jpg);*/
+    
+    display: flex;
+    width: 90%;
+    min-height: 400px;
+    height: auto;
+    
+    margin-bottom: 50px;
+    /*margin: 20px;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    justify-content: center;
+    align-items: center;*/
+}
+#map {
+    border-radius: 30px 0px 0px 30px;
+    width: 55%;
+    
+}
+.right2 {
+    font-size: 1.5em;
+    display: flex;
     background-image: url(shutterstock_433736437.jpg);
     background-size: cover;
-    display: flex;
-    width: 100%;
-    min-height: 800px;
-    height: auto;
-    margin: 20px;
-    /*clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);*/
+    background-position: center;
+    /*background-color: black;*/
     justify-content: center;
     align-items: center;
+    width: 45%;
+    border-radius: 0px 30px 30px 0px;
 }
-
 .coach {
     text-align: center;
     font-size: xx-large;
@@ -231,10 +255,8 @@ iframe {
     border-radius: 15px;
 }
 
-#map {
-    height: 400px;
-    width: 400px;
-  }
+
+  
   #contacts_list {
       flex-direction: column;
   }
