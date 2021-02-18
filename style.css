@@ -151,7 +151,7 @@ h1 {
 }
 
 .classes_texts {
-    margin-top: 100px;  
+    margin-top: 50px;  
     font-size: x-large;
     text-align: center;
     background-color: #c7acc4;
@@ -162,7 +162,7 @@ h1 {
 }
 .classes_txt {
     display: none;
-    padding: 80px;
+    padding: 40px 80px;
 }
 #contacts_section {
     /*background-image: url(shutterstock_433736437.jpg);*/
@@ -236,19 +236,19 @@ table {
     height: 400px;
     
 }
+tbody {
+    background-color:  rgba(255, 255, 255, 0.9);
 
-table, th, td {
+}
+table {
+    
+    
+    width: 95%;
     padding: 5px;
     font-size: 30px;
-    color: white;
+    color: black;
     text-align: center;
-    
-    
-    background-color: rgba(0, 0, 0, 0.1);
-}
-#back {
-    background-color: white;
-
+    background-color:  rgba(0, 0, 0, 0.1);
 }
 
 iframe {
@@ -332,4 +332,16 @@ iframe {
 }
 #contacts_list li {
    list-style-type: none;
+}
+@media only screen and (max-width: 480px) {
+    .classes_description {
+        display: flex;
+        flex-direction: column;
+    }
+    table {
+        font-size: 20px;
+    }
+    .right {
+        background-color: black;
+    }
 }
