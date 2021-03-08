@@ -1,0 +1,13 @@
+body {
+  background-color: #c7acc4;
+  font-family: 'Lobster', cursive;
+}
+h1, h2, p {
+  text-align: center;
+}
+p {
+  font-size: 25px;
+}
+iframe {
+  text-align: center;
+}
